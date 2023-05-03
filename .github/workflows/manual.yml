@@ -31,17 +31,17 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Install Chrome Browser
-        if: ${{ inputs.browser == "Chrome" }}
+        if: ${{ inputs.browser == Chrome }}
         run:   |
             chmod +x ./scripts/InstallChrome.sh
                         ./scripts/InstallChrome.sh
       - name: Install Firefox Browser
-        if: ${{ inputs.browser == "Firefox" }}
+        if: ${{ inputs.browser == Firefox }}
         run:   |
             chmod +x ./scripts/InstallFirefox.sh
                         ./scripts/InstallFirefox.sh
       - name: Install Edge Browser
-        if: ${{ inputs.browser == "Edge" }}
+        if: ${{ inputs.browser == Edge }}
         run:   |
             chmod +x ./scripts/InstallEdge.sh
                         ./scripts/InstallEdge.sh
