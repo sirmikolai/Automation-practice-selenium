@@ -49,8 +49,8 @@ jobs:
         run: mvn clean install --file pom.xml -DskipTests
       - name: Run tests
         run: mvn test --file pom.xml -DsuiteFile=suite.xml -Dbrowser=${{ inputs.browser }} -Dheadless=yes
-      - name: Test local action
-        uses: ./allure-report-action
+      - name: Prepare allure report
+        uses: simple-elf/allure-report-action@master
         if: always()
         id: allure-report
         with:
@@ -58,7 +58,7 @@ jobs:
          gh_pages: gh-pages
          allure_report: allure-report
          allure_history: allure-history
-      - name: Deploy report to Github Pages
+      - name: Deploy allure report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
