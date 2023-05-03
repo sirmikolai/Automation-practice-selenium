@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="cat tools" parallel="tests" preserve-order="false" thread-count="3">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="listeners.SuiteListener"/>
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="testngtests.FirstTest"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="testngtests.FirstTest"/>
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="testngtests.FirstTest"/>
+        </classes>
+    </test>
+</suite>
