@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  Run-tests:
 
     runs-on: ubuntu-latest
 
@@ -25,5 +25,5 @@ jobs:
                         ./scripts/InstallChrome.sh
       - name: Build and install with Maven
         run: mvn clean install --file pom.xml -DskipTests
-      - name: Run test
+      - name: Run tests
         run: mvn test --file pom.xml -DsuiteFile=suite.xml -Dbrowser=chrome -Dheadless=yes
