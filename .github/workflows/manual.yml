@@ -50,7 +50,7 @@ jobs:
       - name: Run tests
         run: mvn test --file pom.xml -DsuiteFile=suite.xml -Dbrowser=${{ inputs.browser }} -Dheadless=yes
       - name: Prepare allure report
-        uses: peaceiris/actions-gh-pages@v2
+        uses: simple-elf/allure-report-action@master
         if: always()
         id: allure-report
         with:
