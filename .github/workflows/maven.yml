@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Install Chrome Browser
+      - name: Install Browser
         run:   |
             chmod +x ./scripts/InstallChrome.sh
                         ./scripts/InstallChrome.sh

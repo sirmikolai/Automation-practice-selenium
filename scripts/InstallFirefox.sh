@@ -2,4 +2,4 @@
 set -ex
 sudo apt update
 sudo apt install snapd
-sudo snap install chrome
+sudo snap install firefox
