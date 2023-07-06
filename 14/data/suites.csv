@@ -1,2 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Thu Jul 06 20:01:46 GMT 2023","Thu Jul 06 20:01:47 GMT 2023","499","cat tools","Test3","testngtests.FirstTest","testngtests.FirstTest","pageTitleTest","pageTitleTest",""
